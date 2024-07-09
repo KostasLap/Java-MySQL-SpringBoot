@@ -1,0 +1,7 @@
+bug_id,description,name,severity
+1,LogIn failed,UserError,3
+2,Start failed,WinError,5
+3,Coomment invalid,FbError,1
+4,SaveTransaction error,SqlBug,4
+5,Import ?,JavaError,3
+6,Import photos,InstaError,1
