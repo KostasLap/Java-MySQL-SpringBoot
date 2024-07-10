@@ -90,6 +90,7 @@ public class EntityHelper {
                     BugReport dependOnBugReport = dependOnBugReports.get(0);
                     if(dependOnBugReport.getResolved()){
                         bugReport.setResolved(true);
+                        bugReport.setDateResolved(LocalDateTime.now());
                         bugReportRepository.save(bugReport);
                         updateStateResolved();
                     }

@@ -15,6 +15,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @SpringBootApplication
 public class MysqlJavaAppApplication implements CommandLineRunner {
@@ -50,19 +51,37 @@ public class MysqlJavaAppApplication implements CommandLineRunner {
 
 //		entityHelper.findMutualDependencies();
 
+//		BugReport report = bugReportRepository.findById(2).get();
+//		report.setResolved(false);
+//		bugReportRepository.save(report);
+
+//		entityHelper.updateStateResolved();
+
+
+
+
+//		Users user = new Users("Ieroklis");
+//		usersRepository.save(user);
+//
+//		Bugs bug = new Bugs();
+//		bug.setName("CodError");
+//		bug.setDescription("Unfinished match");
+//		bug.setSeverity(1);
+//		bugsRepository.save(bug);
+//
+//		Dependencies dep = new Dependencies(bug,bugsRepository.findById(2).get());
+//		dependenciesRepository.save(dep);
+//
+//		BugReport report = new BugReport(bug,user,LocalDateTime.now(),false,null);
+//		bugReportRepository.save(report);
+
 
 //		entityHelper.exportUserCSV();
 //		entityHelper.exportBugsCSV();
 //		entityHelper.exportBugReportCSV();
 //		entityHelper.exportDependenciesCSV();
 
-//		BugReport report = bugReportRepository.findById(5).get();
-//		System.out.println(report.toString());
-//		report.setResolved(false);
-//		System.out.println(report.toString());
-//		bugReportRepository.save(report);
-
-//		entityHelper.updateStateResolved();
+//entityHelper.noResolvedReportsList();
 
 
 
